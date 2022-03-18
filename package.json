@@ -1,0 +1,10 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "root",
+  "private": true,
+  "workspaces": [
+    "packages/presentation/client/app",
+    "packages/presentation/server/api"
+  ]
+}

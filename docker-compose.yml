@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  app:
+    container_name: "app"
+    build:
+      context: .
+      dockerfile: ./packages/presentation/client/app/Dockerfile
+    tty: true
+    ports:
+      - 3000:3000
+    volumes:
+      - ./packages/presentation/client/app:/app/packages/presentation/client/app/
+    command: sh -c "npm run dev"
+  
+  api:
+    container_name: "api"
+    build:
+      context: .
+      dockerfile: ./packages/presentation/server/api/Dockerfile
+    tty: true
+    ports:
+      - 3001:3001
+    volumes:
+      - ./packages/presentation/server/api:/app/packages/presentation/server/api/
+    command: sh -c "npm run start:dev"
+
