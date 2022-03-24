@@ -5,6 +5,7 @@
   "private": true,
   "workspaces": [
     "packages/presentation/client/app",
-    "packages/presentation/server/api"
+    "packages/presentation/server/api",
+    "packages/infrastructure/database/orm"
   ]
 }
