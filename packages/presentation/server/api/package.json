@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "@demo/api",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -21,9 +21,10 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@demo/orm": "^1.0.0",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
-    "@nestjs/platform-express": "^8.0.0",
+    "@nestjs/platform-express": "^8.4.3",
     "@nestjs/typeorm": "^8.0.3",
     "mysql2": "^2.3.3",
     "reflect-metadata": "^0.1.13",

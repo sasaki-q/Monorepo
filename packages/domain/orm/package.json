@@ -1,0 +1,17 @@
+{
+  "name": "@demo/orm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^17.0.23",
+    "typeorm": "^0.3.4",
+    "typescript": "^4.6.3"
+  }
+}

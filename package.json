@@ -4,8 +4,11 @@
   "description": "root",
   "private": true,
   "workspaces": [
-    "packages/presentation/client/app",
-    "packages/presentation/server/api",
-    "packages/infrastructure/database/orm"
-  ]
+    "packages/domain/orm",
+    "packages/presentation/server/api"
+  ],
+  "scripts": {
+    "compile": "npm run compile -w @demo/orm",
+    "api": "npm run start:dev -w @demo/api"
+  }
 }

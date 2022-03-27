@@ -1,6 +1,7 @@
 FROM node:16.3
 
 WORKDIR /app
+RUN npm install -g @nestjs/cli
 
 COPY .npmrc .npmrc
 COPY ./package*.json ./
