@@ -1,4 +1,4 @@
-import { User } from '@demo/orm/lib';
+import { User } from '@demo/orm/lib/user';
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';

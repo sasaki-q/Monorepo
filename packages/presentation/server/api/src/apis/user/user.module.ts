@@ -1,4 +1,4 @@
-import { User } from '@demo/orm/lib';
+import { User } from '@demo/orm/lib/user';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserController } from './user.controller';
