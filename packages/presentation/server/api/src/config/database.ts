@@ -3,11 +3,11 @@ import { User } from "@demo/orm/src"
 
 export const ormConfig: TypeOrmModuleOptions = {
     type: 'postgres',
-    host: 'test.cv7rlmmgw3kh.ap-northeast-1.rds.amazonaws.com',
+    host: 'localhost',
     port: 5432,
-    username: 'test',
-    password: 'testtest',
+    username: 'postgres',
+    password: 'postgres',
     database: 'test',
-    entities: [User],
+    entities: [],
     synchronize: true,
 }

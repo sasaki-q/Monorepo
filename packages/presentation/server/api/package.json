@@ -5,6 +5,9 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  "bin": {
+    "api": "bin/cli.js"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -27,6 +30,7 @@
     "@nestjs/platform-express": "^8.4.3",
     "@nestjs/typeorm": "^8.0.3",
     "mysql2": "^2.3.3",
+    "pg": "^8.7.3",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
