@@ -1,5 +1,5 @@
 import { TypeOrmModuleOptions } from "@nestjs/typeorm";
-import { User } from "@demo/orm/src"
+import { User } from "@demo/orm/lib"
 
 export const ormConfig: TypeOrmModuleOptions = {
     type: 'postgres',
@@ -8,6 +8,6 @@ export const ormConfig: TypeOrmModuleOptions = {
     username: 'postgres',
     password: 'postgres',
     database: 'test',
-    entities: [],
+    entities: [User],
     synchronize: true,
 }

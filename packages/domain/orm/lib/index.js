@@ -22,20 +22,9 @@ __decorate([
     __metadata("design:type", String)
 ], User.prototype, "name", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ name: "is_active" }),
-    __metadata("design:type", Boolean)
-], User.prototype, "isActive", void 0);
-__decorate([
-    (0, typeorm_1.Column)({
-        type: "enum",
-        enum: ["MASTER" || "ADMIN" || "USER"],
-    }),
+    (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], User.prototype, "role", void 0);
-__decorate([
-    (0, typeorm_1.CreateDateColumn)({ name: 'created_at' }),
-    __metadata("design:type", Date)
-], User.prototype, "createdAt", void 0);
+], User.prototype, "age", void 0);
 User = __decorate([
     (0, typeorm_1.Entity)({ name: "users" })
 ], User);

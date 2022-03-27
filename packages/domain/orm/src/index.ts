@@ -4,19 +4,10 @@ import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeor
 export class User {
     @PrimaryGeneratedColumn()
     id: number;
-
+    
     @Column()
     name: string;
 
-    @Column({name: "is_active"})
-    isActive: boolean
-
-    @Column({
-        type: "enum",
-        enum: ["MASTER" || "ADMIN" || "USER"],
-    })
-    role: string
-
-    @CreateDateColumn({name: 'created_at'})
-    createdAt: Date
+    @Column()
+    age: string;
 }
